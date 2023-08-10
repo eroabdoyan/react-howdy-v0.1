@@ -1,0 +1,116 @@
+.header {
+    background-color: #121118;
+    color: #fff;
+    display: flex;
+    -webkit-box-shadow: 0 8px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 8px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 8px 5px rgba(57, 63, 72, 0.3);
+}
+
+.header-left {
+    position: relative;
+    padding: 10px;
+    left: 50px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-howdy {
+    width: 50px;
+    height: 60px;
+    display: flex;
+}
+
+.header-info {
+    padding: 10px;
+    margin: 0;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+
+.header-info h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    padding: 0;
+    margin: 0;
+}
+
+.header-info p {
+    margin: 0;
+    opacity: 0.5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.top-menu {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.top-menu li {
+    display: inline-block;
+    position: relative;
+    padding: 0 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.top-menu li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #5FCC4D;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.top-menu li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.top-menu li:hover {
+    color: #5FCC4D;
+}
+
+.search-block {
+    position: relative;
+    display: flex;
+    left: 10%;
+    top: 10%;
+    border-radius: 100px #212337 solid;
+}
+
+.search-block input {
+    background-color: #333;
+    color: #A9A9A9;
+    border: none;
+    outline: none;
+    position: relative;
+    width: 350px;
+    height: 35px;
+    padding: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.search-block img {
+    width: 25px;
+    height: 25px;
+    overflow: visible;
+    position: absolute;
+    right: 0;
+    float: right;
+    border: 0;
+    padding: 5px;
+    cursor: pointer;
+
+}
